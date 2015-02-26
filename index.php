@@ -30,8 +30,8 @@
 		the_content();
 	}
 ?>
-	</div>
-	<div class="subnavContainer">
+	</div><hr><br>
+	<center><div class="subnavContainer">
 		<div class="subnavLeft">
 <?php
 	if ($resume_page = ot_get_option('resume_page')) {
@@ -72,7 +72,7 @@
 	}
 ?>
 		</div>
-	</div><!-- /subnavContainer -->
+	</div></center><!-- /subnavContainer -->
 </div>
 <div class="sidebar hidden">
 <?php

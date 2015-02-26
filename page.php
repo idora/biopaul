@@ -6,7 +6,7 @@
 				the_post();
 	?>
 	<div class="desc">
-		<?php the_content(); ?>
+		<psize><?php the_content(); ?><psize>
 	</div>
 	<?php
 			}

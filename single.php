@@ -23,11 +23,12 @@
 	while(have_posts()) {
 		the_post();
 ?>
-		<article>
+<article>
 			<header><h1><?php the_title(); ?></h1></header>
-			<section class="meta">由 <?php the_author(); ?> 发表于 <?php echo get_the_time('Y年n月j日', get_the_ID()); ?>, <a href="#comments"><?php comments_number('暂无评论','1 条评论','% 条评论'); ?></a></section>
-			<section class="entry">
-				<?php the_content();?>
+			<section class="meta"> 时间 / <?php echo get_the_time('Y年n月j日', get_the_ID()); ?> | 评论 / <a href="#comments"><?php comments_number('暂无评论','1 条评论','% 条评论'); ?></a></section>
+<?php get_post_thumbnail(); ?> 	<br>	<br>		
+<section class="entry">
+				<psize><?php the_content();?><psize>
 			</section>
 		</article>
 <?php
