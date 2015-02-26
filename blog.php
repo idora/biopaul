@@ -38,9 +38,10 @@
 ?>
 		<article>
 			<header><h1><a href="<?php echo get_permalink(); ?>" target="_self"><?php the_title(); ?></a></h1></header>
-			<section class="meta">由 <?php echo the_author_posts_link(); ?> 发表于 <?php echo get_the_time('Y年n月j日', get_the_ID()); ?>, <a href="<?php echo get_permalink(); ?>#comments"><?php comments_number('暂无评论','1 条评论','% 条评论'); ?></a></section>
+			<section class="meta"> 时间 / <?php echo get_the_time('Y年n月j日', get_the_ID()); ?> | 评论 / <a href="#comments"><?php comments_number('暂无评论','1 条评论','% 条评论'); ?></a></section>
+<?php get_post_thumbnail(); ?> 	
 			<section class="entry">
-				<?php the_content('继续阅读'); ?>
+				<psize><?php the_content('继续阅读'); ?><psize>
 			</section>
 		</article>
 <?php
